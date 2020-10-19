@@ -1,7 +1,7 @@
  ## Jessica Atchley's Python Project
 ### This project is meant to be a character creator for the website zrpg.net . This project will lead you through a series of questions, and depending on how you answer, the program will choose different attributes and characteristics for your rpg character. 
 
-Features included in this project according to the requirements:
+Features that are included in this project according to the requirements:
 
 1. 
 
