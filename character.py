@@ -1,4 +1,5 @@
-##
+##import random for occupation?
+##Make sure to import occupation file
 
 my_character = {'character_name': '', 'character_age': 0, 'character_race': '', 'character_occupation': 'nothing'}
 
