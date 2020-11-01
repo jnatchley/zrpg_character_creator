@@ -1,17 +1,19 @@
-##import random for occupation?
-##Make sure to import occupation file
+import random
+from occupation import job
+## Remember to make text appear more slowly
 
 my_character = {'character_name': '', 'character_age': 0, 'character_race': '', 'character_occupation': 'nothing'}
 
-##introduction
+## introduction
 
 print("Welcome to the ZRPG character creator! We are going to answer some questions to create a randomized character for your zrpg needs.")
+print()
 
-
-##Character's name
+## Character's name
 name = input("Name your character something fun:  ")
+print()
 print(f"Okay, if you're sure about that... Your character's name will be {name}.")
-
+print()
 my_character['character_name'] = name
 
 
@@ -27,23 +29,30 @@ else:
 
 my_character['character_age'] = age
 
+print()
 
 ## Deciding the race of the character, which is done by providing a list of words and the word they choose will decide their character's race
+print("Okay, now we will choose the race of your character. What will you be? A strong sturdy goron? A graceful zora? Let's find out!")
 race = "placeholder"
 
+print()
 
 ## Here we will be deciding the occupation of the character. First we pull the current occupation from the dictionary, then randomly choose an occupation from a list
 print(f"Now let's see what occupation your character has. Let's see, currently {name}'s occupation is: ")
-
+##Code below pulls out the purposefully place "nothing" in the dictionary before changing it
 print([value for value in my_character.values()][3])
 
 print("Yikes. Uh, we better change that. We can't have your character being a bum on the street. ")
-occupation = "placeholder"
+print()
+print(f"How about we choose something fun... something exciting... something that you can be creative with! Okay, I'm going to grab something random. Let's see... you shall be a/an {job}!")
 
+my_character['character_occupation'] = job
 
-##Here we will show the user all of the data of their character
-print("Phew, that took some work but we finally have a good base for your character! Let's see the data we've collected: ")
-for key, value in my_character.items():
-    print(key, value)
-print("Oh ew, that doesn't look very neat, does it. Let's clean that up a bit.")
-print(f"Your character's name is {name}. Your character's age is {age}. Your character's race is {race}, and finally, your character's occupation is {occupation}.")
+## Here we will show the user all of the data of their character
+
+##print("Phew, that took some work but we finally have a good base for your character! Let's see the data we've collected: ")
+##for key, value in my_character.items():
+##    print(key, value)
+
+##print("Oh ew, that doesn't look very neat, does it. Sorry. I'm just learning how to code. Let's clean that up a bit.")
+##print(f"Your character's name is {name}. Your character's age is {age}. Your character's race is {race}, and finally, your character's occupation is {occupation}.")
