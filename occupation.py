@@ -6,4 +6,5 @@ import random
 
 occupation_list = [line.strip() for line in open('jobs.txt')]
 
+
 job = random.choice(occupation_list)
