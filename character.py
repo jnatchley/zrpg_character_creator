@@ -34,7 +34,7 @@ my_character['character_name'] = name
 
 ## Decide the age of the character, this is done by counting the number of letters that the user inputs while they explain their likes and dislikes.
 class Char_age:
-    print_slow("Now tell me a bit about yourself. Don't be shy! Tell me sopme things you like, and some things you dislike.  ")
+    print_slow("Now tell me a bit about yourself. Don't be shy! Tell me some things you like, and some things you dislike.  ")
     my_age = len(input())
 
     if my_age <= 20:
