@@ -66,10 +66,10 @@ class Char_race:
         print("Shifty buggers, those lizalfos are. Big camouflage points though, and you can climb walls. Fun!")
     elif my_race == "8":
         my_race = "Moblin"
-        print("They may be a little dumb, but Moblin's are as dangerous as you're going to get!")
+        print("They may be a little dumb, but Moblins are as dangerous as you're going to get!")
     elif my_race == "9":
         my_race = "Rito"
-        print("BIRDOS! Sorry, I was excited. Rito's are my favorite, and now you get to make a fluffy bird character!")
+        print("BIRDOS! Sorry, I was excited. Ritos are my favorite, and now you get to make a fluffy bird character!")
     elif my_race == "10":
         my_race = "Sheikah"
         print("Our creative and agile ninjas, the Sheikah! There are two branches, the kakariko village sheikah or the yiga clan!")
@@ -80,7 +80,8 @@ class Char_race:
         my_race = "Zora"
         print("Refined, elegant, and poise... unless you go the route of a cute dumbo like Prince Sidon. You've got Zora!")
     else:
-        print("Uh oh, that's not a correct choice... you're going to have to try this all again.")
+        my_race = "Bokoblin"
+        print("Uh oh, that's not one of the options... Uhhh since it seems you're not very... intellectually talented... let's just make your character a Bokoblin.")
 
 race = Char_race.my_race
 
