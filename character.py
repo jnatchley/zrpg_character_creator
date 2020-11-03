@@ -2,14 +2,15 @@ import random
 import sys
 import time
 from occupation import job
-## Remember to make text appear more slowly
 
+##This makes text appear slowly
 def print_slow(str):
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
         time.sleep(0.05)
 
+##Beginning dictionary to store character's info
 my_character = {'character_name': '', 'character_age': 0, 'character_race': '', 'character_occupation': 'nothing'}
 
 ## introduction
