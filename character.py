@@ -33,7 +33,7 @@ my_character['character_name'] = name
 
 ## Decide the age of the character, this is done by counting the number of letters that the user inputs while they explain their likes and dislikes.
 class Char_age:
-    print_slow("Now tell me a bit about yourself. Don't be shy! Tell me at least three things you like, and some things you dislike.  ")
+    print_slow("Now tell me a bit about yourself. Don't be shy! Tell me sopme things you like, and some things you dislike.  ")
     my_age = len(input())
 
     if my_age <= 20:
@@ -64,30 +64,33 @@ class Char_race:
         my_race = "Gerudo"
         print_slow("Strong and mighty, the gerudo are the race for you. These strong ladies are lean mean fighting machines.")
     elif my_race == "4":
+        my_race = "Goron"
+        print_slow("Massive, looming, but with a heart of gold, your character is a goron!")
+    elif my_race == "5":
         my_race = "Guardian Fairy"
         print_slow("Who else is dedicated to their followers like a guardian fairy?")
-    elif my_race == "5":
+    elif my_race == "6":
         my_race = "Hylian"
         print_slow("Plain? Well unless you are our Hero of Time, you're going to be basic. Hylian it is!")
-    elif my_race == "6":
+    elif my_race == "7":
         my_race = "Korok"
         print_slow("Yahaha! Korok it is!")
-    elif my_race == "7":
+    elif my_race == "8":
         my_race = "Lizalfos"
         print_slow("Shifty buggers, those lizalfos are. Big camouflage points though, and you can climb walls. Fun!")
-    elif my_race == "8":
+    elif my_race == "9":
         my_race = "Moblin"
         print_slow("They may be a little dumb, but Moblins are as dangerous as you're going to get!")
-    elif my_race == "9":
+    elif my_race == "10":
         my_race = "Rito"
         print_slow("BIRDOS! Sorry, I was excited. Ritos are my favorite, and now you get to make a fluffy bird character!")
-    elif my_race == "10":
+    elif my_race == "11":
         my_race = "Sheikah"
         print_slow("Our creative and agile ninjas, the Sheikah! There are two branches, the kakariko village sheikah or the yiga clan!")
-    elif my_race == "11":
+    elif my_race == "12":
         my_race = "Wizzrobe"
         print_slow("A unique choice, the wizzrobes are! They may look a big creepy, but they can be quite powerful and have a lot of magic you can play with!")
-    elif my_race == "12":
+    elif my_race == "13":
         my_race = "Zora"
         print_slow("Refined, elegant, and poise... unless you go the route of a cute dumbo like Prince Sidon. You've got Zora!")
     else:
