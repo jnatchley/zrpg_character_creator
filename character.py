@@ -13,6 +13,34 @@ def print_slow(str):
 ##Beginning dictionary to store character's info
 my_character = {'character_name': '', 'character_age': 0, 'character_race': '', 'character_occupation': 'nothing'}
 
+print("""
+@@@@@@@@@@@@@@/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@/&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@%&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@/@/.%%&@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@(/(/#%.%#&%&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@&@@@@@.(&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@********** (&***********@@@@*@@*@*@**@@@*@@*@%*@*@**@*@*@*@*@@***@*@@@@@@@@@@
+@@****@@@@@@(((((@@******&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@*@@@@@@@@@@(((@***@***@@@***********%@******%@@@@*********@@@@@@@*****@@@@@@@@
+@@@@@@@@@@@@@&(***@@**@@@@@@****@@@@***@@*****@@@@@@*****@@****@@@@/*****@@@@@@@
+@@@@@@@@@@@@@&**/@**@@@@@@@@****@@@%@**@@*****@@@@@@****/@@@****@@@*******@@@@@@
+@@@@@@@@@@@@*******@@@@@@@@@********@@@@@*****@@@@@@*****@@@****@@***@****@@@@@@
+@@@@@@@@@@*******@@****#@@@@****@@**@@@@@*****@@@&@@*****@@@****@/***/@****@@@@@
+@@@@@@@@@**@@**(/@@@@*@@@*&@****@@@@@**@@*****@@&*@@****@@@/****@**/@@@****&@@@@
+@@@@@@@**@@***%(@@@@@*@@@@@@****@@@@*/&@@****/@@**@@*****@*****@***@@@@*****@@@@
+@@@@@***@***@&&@@@@@&@@@@@**********************&*@*********@@*****/@@@*****#*@@
+@@@@******@@@&&&@@@*@@@****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@***********&@&@********@@@@*@@*@(**@@**@@@@*@@*@@****@*/@@@@@**@*#*@@*@@*@@*@*
+@@@@@@@@@@@@@&&&@@@@@@@@@@@@@*@@**@@@@@@@@@@@@@@@@@@@@@@@*@*@*@@*@@*@@@@@@@@@@@@
+@@@@@@@@@@@@@&&(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@&((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@ ((@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@ &@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+""")
+
 ## introduction
 def welcome_message():
     print_slow("Welcome to the ZRPG character creator! We are going to answer some questions to create a randomized character for your zrpg needs.")
@@ -53,8 +81,8 @@ print()
 ## Deciding the race of the character, which is done by providing a list of words and the word they choose will decide their character's race
 class Char_race:
     print_slow("Okay, now we will choose the race of your character. What will you be? A strong sturdy goron? A graceful zora? Let's find out! ")
-    print_slow("Here is a list of adjectives. Please type the number of the adjective you like! \n 1. goofy \n 2. noble \n 3. mighty \n 4. imposing \n 5. dedicated \n 6. plain \n 7. mischievous \n 8. shifty \n 9. dangerous \n 10. regal \n 11. agile \n 12. powerful \n 13. refined:")
-    my_race = input("\n What do you choose?  ")
+    print_slow("Here is a list of adjectives. Please type the number of the adjective you like! \n 1. goofy \n 2. noble \n 3. mighty \n 4. imposing \n 5. dedicated \n 6. plain \n 7. mischievous \n 8. shifty \n 9. dangerous \n 10. regal \n 11. agile \n 12. powerful \n 13. refined: \n What do you choose?  ")
+    my_race = input()
     if my_race == "1":
         my_race = "Bokoblin"
         print_slow("Goofy huh? What's more goofy than a Bokoblin? Congrats on your piggy little friend!")
@@ -132,5 +160,13 @@ print_slow(f"Your character's name is {name}. Your character's age is {age}. You
 print()
 
 def ending_message(your_name):
-    print_slow("Thank you for trying out this program, " + your_name + "! I hope you had fun, and be sure to check out zrpg.net if this has inspired you to bring your character to life! See you there!")
-ending_message(input("Now, what is YOUR name?  "))
+    print_slow("Thank you for trying out this program, " + your_name + "! I hope you had fun, and be sure to check out zrpg.net if this has inspired you to bring your character to life! See you there! ")
+print_slow("Now, what is YOUR name?  ")
+ending_message(input())
+
+print()
+
+def goodbye(final, final2):
+    result = final + final2
+    return result
+print(goodbye('Good', 'bye!'))
