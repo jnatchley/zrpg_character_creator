@@ -78,7 +78,7 @@ my_character['character_age'] = age
 
 print()
 
-## Deciding the race of the character, which is done by providing a list of words and the word they choose will decide their character's race
+## Deciding the race of the character, which is done by providing a list of words and the word they choose will decide their character's race. In the future this may be changed into a switch
 class Char_race:
     print_slow("Okay, now we will choose the race of your character. What will you be? A strong sturdy goron? A graceful zora? Let's find out! ")
     print_slow("Here is a list of adjectives. Please type the number of the adjective you like! \n 1. goofy \n 2. noble \n 3. mighty \n 4. imposing \n 5. dedicated \n 6. plain \n 7. mischievous \n 8. shifty \n 9. dangerous \n 10. regal \n 11. agile \n 12. powerful \n 13. refined: \n What do you choose?  ")
@@ -165,6 +165,8 @@ print_slow("Now, what is YOUR name?  ")
 ending_message(input())
 
 print()
+
+## The function below is a bit redundant, but used to learn how 'return' is used
 
 def goodbye(final, final2):
     result = final + final2
