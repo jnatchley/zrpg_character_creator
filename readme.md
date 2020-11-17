@@ -9,7 +9,7 @@
 
 1. Create and call at least 3 functions, at least one of which must return a value that is used
 
-  --> Several functions are used in this program, two of least use return
+  --> Several functions are used in this program, two at least use return
 
 2. Read data from an external file, such as text, JSON, CSV, etc and use that data in your application
 

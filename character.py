@@ -76,6 +76,20 @@ age = Char_age.my_age
 
 my_character['character_age'] = age
 
+## Weapon section will be expanded in the future, but currently is just to try out the return part of a function
+def choose_weapon(weapon):
+    return weapon / 2
+
+wea = choose_weapon(age)
+
+print(f"Looking at your age, {age}, I think it's fitting for your weapon to be a:")
+
+if wea >= 50:
+    print("sword")
+else:
+    print("bow")
+
+
 print()
 
 ## Deciding the race of the character, which is done by providing a list of words and the word they choose will decide their character's race. In the future this may be changed into a switch
